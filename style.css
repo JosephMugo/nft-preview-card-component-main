@@ -6,117 +6,43 @@
     box-sizing: border-box;
 }
 
-html,
 body {
     height: 100vh;
-    background-color: hsl(217, 54%, 11%);
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-}
-
-body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: hsl(216, 50%, 16%);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-radius: .9rem;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 1.3rem;
 }
 
-#equilibrium-img,
-.info-container,
-.profile-container, #line {
-    flex: 1;
+.card img {
+    display: block;
+    max-width: 100%;
 }
 
-#equilibrium-img {
-    flex: 1;
-    border-radius: .5rem;
-}
-
-.info-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem 0;
-}
-
-.info-container h3 {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: .5rem 0 1rem 0;
-}
-
-.info-container p {
-    color: hsl(215, 51%, 70%);
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.4rem;
-    margin-bottom: 1.5rem;
-}
-
-.price-days-container {
+.numbers-container {
     display: flex;
     justify-content: space-between;
 }
 
-#price-section, #days-section {
-    display: flex;
-    font-size: 1.3em;
-}
-
-#price-section {
-    color:hsl(178, 100%, 50%);
-}
-
-#price-section h6 {
-    font-weight: 400;
-    margin-left: .5rem;
-}
-
-#days-section {
-    color:hsl(215, 51%, 70%);
-}
-
-#days-section h6 {
-    font-weight: 300;
-    margin-left: .5rem;
-}
-
-.profile-container {
+.creator-container {
     display: flex;
     align-items: center;
 }
 
-#avatar {
-    width: 2rem;
-    border: 1px solid white;
-    border-radius: 50%;
+.creator-container img {
+    width: 14%;
+    padding-right: 4%;
 }
-
-.profile-container p {
-    font-weight: 400;
-    color: hsl(215, 51%, 70%);
-    margin-left: 1.5rem;
-}
-
-#name {
-    color: white;
-}
-
-#line {
-    border-color: hsl(215, 32%, 27%) !important;
-    margin-bottom: 1.3rem;
-}
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
